@@ -1,12 +1,69 @@
-* {
-  box-sizing: border-box;
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
 }
 
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.property-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.property-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 10px;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.property-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.property-card h3 {
+  margin: 10px 0;
+}
+
+.filters {
+  margin: 20px 0;
+}
+
+.filters input {
+  margin: 0 10px;
+  padding: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px 0;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+form {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form div {
+  margin: 10px 0;
+}
+
+form input {
+  padding: 10px;
+  width: 300px;
+  margin: 5px 0;
 }
